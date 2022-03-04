@@ -25,5 +25,3 @@ export const chunk = (valores: number[], tamanho: number): number[][] => {
 
   return newArr;
 };
-
-console.log(chunk([1, 2, 3, 4, 5], 2))
