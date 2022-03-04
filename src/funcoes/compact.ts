@@ -9,5 +9,12 @@
  * @returns somente os itens definidos.
  */
  export const compact = (items: unknown[]): unknown[] => {
-  return null;
+  let newArr:unknown[] = items.filter((item)=>{
+    if (!!item) {
+      return true
+    } else {
+      return false
+    }
+  })
+  return newArr;
 };
