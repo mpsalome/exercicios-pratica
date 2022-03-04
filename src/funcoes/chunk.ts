@@ -12,7 +12,7 @@
  * @returns
  */
 export const chunk = (valores: number[], tamanho: number): number[][] => {
-  let newArr = [];
+  let newArr:number[][] = [];
 
   for (let i = 0; i < valores.length; i+=tamanho) {
     let groupArr = [];
@@ -25,5 +25,3 @@ export const chunk = (valores: number[], tamanho: number): number[][] => {
 
   return newArr;
 };
-
-console.log(chunk([1, 2, 3, 4, 5], 2))
